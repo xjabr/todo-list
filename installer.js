@@ -1,11 +1,12 @@
 var electronInstaller = require('electron-winstaller');
 
 resultPromise = electronInstaller.createWindowsInstaller({
-  appDirectory: './build/Todo-List-win32-x64',
+  appDirectory: './build/Todo List-win32-x64',
   outputDirectory: './installers',
   authors: 'Gabriele Lanzamfae',
+  description: 'Simple Todo List',
   exe: './todolist.exe',
-  setupExe: 'todo-list-setup.exe',
+  setupExe: 'TodoList-setup.exe',
   setupIcon: 'media/img/icon.ico'
 });
 
