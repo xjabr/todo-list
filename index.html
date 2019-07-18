@@ -17,12 +17,16 @@
 </head>
 
 <body>
-  <h1 class="nav">Todo List</h1>
-
+  <div class="nav">
+    <div class="container">
+      <h1>Todo List</h1>
+    </div>
+  </div>
+  
   <div class="container main">
     <div class="data">
       <input id="title" type="text" placeholder="Title:" />
-      <textarea id="text" type="text" placeholder="Text:"></textarea>
+      <textarea id="text" type="text" placeholder="Content:"></textarea>
       <div class="row">
         <div class="col-6">
           <input id="add" type="button" value="Add item" />
@@ -32,6 +36,8 @@
         </div>
       </div>
     </div>
+
+    <hr/>
 
     <ul id="list"></ul>
   </div>
