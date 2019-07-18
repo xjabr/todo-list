@@ -8,7 +8,8 @@
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "start": "npm run ts && electron ./dist/app.js",
     "build-win32": "electron-packager .  \"Todo List\" --platform=win32 --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.ico --overwrite",
-    "build-linux": "electron-packager .  \"Todo List\" --platform=linux --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.png --overwrite"
+    "build-linux": "electron-packager .  \"Todo List\" --platform=linux --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.png --overwrite",
+    "installer": "electron-installer-windows --src 'build\\Todo List-win32-x64' --dest build\\installers\\"
   },
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
@@ -20,6 +21,7 @@
     "@types/electron": "^1.6.10",
     "@types/jquery": "^3.3.30",
     "electron": "^5.0.7",
+    "electron-installer-windows": "^2.0.0",
     "electron-packager": "^14.0.1",
     "electron-winstaller": "^3.0.4",
     "tslint": "^5.10.0",
