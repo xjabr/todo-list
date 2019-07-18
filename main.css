@@ -1,0 +1,125 @@
+.nav {
+  width: 100%;
+  background: #15c564;
+  color: #fff;
+  padding: 20px;
+}
+
+.data {
+  width: 100%;
+}
+
+.data input[type="text"] {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+} 
+
+.data textarea {
+  display: block;
+  width: 100%;
+  height: 300px;
+  resize: none;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.data .row .col-6 input[type="button"] {
+  width: 100%;
+  padding: 10px 5px;
+  background: transparent;
+  color: #15c564;
+  border: 1px solid #15c564;
+  border-radius: 8px;
+}
+
+.data .row .col-6 input[type="button"]:hover {
+  background: #15c564;
+  color: #fff;
+}
+
+.data .row .col-6.delete input[type="button"] {
+  color: #e01313;
+  border: 1px solid #e01313;
+}
+
+.data .row .col-6.delete input[type="button"]:hover {
+  background: #e01313;
+  color: #fff;
+}
+
+#list {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.list-item {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+
+.list-item h2 {
+  color: #000;
+  font-size: 22px;
+  width: 70%;
+  margin: 0;
+}
+
+.list-item p {
+  color: #222;
+  font-size: 18px;
+  width: 70%;
+  margin: 0;
+}
+
+.list-item button {
+  width: 100%;
+  height: 100%;
+  color: #e01313;
+  border: 1px solid #e01313;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.list-item button:hover {
+  color: #fff;
+  background: #e01313;
+}
+
+.list-item i {
+  font-size: 28px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */

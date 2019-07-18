@@ -1,0 +1,33 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "A minimal Todo List application written in Typescript",
+  "main": "dist/app.js",
+  "scripts": {
+    "ts": "tsc",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run ts && electron ./dist/app.js",
+    "build-win32": "electron-packager .  \"Todo List\" --platform=win32 --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.ico --overwrite",
+    "build-linux": "electron-packager .  \"Todo List\" --platform=linux --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.png --overwrite"
+  },
+  "repository": "https://github.com/electron/electron-quick-start-typescript",
+  "keywords": [
+    "todo list"
+  ],
+  "author": "Gabriele Lanzafame",
+  "license": "MIT LICENSE",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/jquery": "^3.3.30",
+    "electron": "^5.0.7",
+    "electron-packager": "^14.0.1",
+    "electron-winstaller": "^3.0.4",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.5",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.4.1"
+  }
+}
