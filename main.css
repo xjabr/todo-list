@@ -2,7 +2,7 @@
   width: 100%;
   background: #15c564;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .data {
@@ -13,20 +13,18 @@
   display: block;
   width: 100%;
   margin: 15px 0;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #000;
-  border-radius: 8px;
 } 
 
 .data textarea {
   display: block;
   width: 100%;
-  height: 300px;
+  height: 250px;
   resize: none;
   margin: 15px 0;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #000;
-  border-radius: 8px;
 }
 
 .data .row .col-6 input[type="button"] {
@@ -35,7 +33,6 @@
   background: transparent;
   color: #15c564;
   border: 1px solid #15c564;
-  border-radius: 8px;
 }
 
 .data .row .col-6 input[type="button"]:hover {
@@ -53,6 +50,11 @@
   color: #fff;
 }
 
+hr {
+  margin-top: 20px;
+  border-top: 1px solid #bbb;
+}
+
 #list {
   margin-top: 50px;
   padding: 0;
@@ -62,38 +64,48 @@
   width: 100%;
   background: #fff;
   border: 1px solid #000;
-  border-radius: 8px;
   padding: 20px;
   margin: 25px 0;
 }
 
+.list-item .date {
+  font-size: 12px;
+}
 
 .list-item h2 {
   color: #000;
   font-size: 22px;
   width: 70%;
   margin: 0;
+  margin-top: 5px;
 }
 
-.list-item p {
+.list-item pre {
   color: #222;
-  font-size: 18px;
+  font-size: 16px;
+  margin-top: 5px;
   width: 70%;
   margin: 0;
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji"
 }
 
 .list-item button {
   width: 100%;
   height: 100%;
   color: #e01313;
-  border: 1px solid #e01313;
+  border: 1px solid transparent;
   background: transparent;
-  border-radius: 8px;
-}
-
-.list-item button:hover {
-  color: #fff;
-  background: #e01313;
 }
 
 .list-item i {
