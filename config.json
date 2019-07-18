@@ -1,0 +1,9 @@
+{
+  "src": "build/TodoList-win32-x64",
+  "dest": "build/installers/",
+  "options": {
+    "exe": "todolist.exe",
+    "name": "Todo List",
+    "icon": "media/img/icon.ico"
+  }
+}
