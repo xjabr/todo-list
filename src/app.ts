@@ -78,7 +78,7 @@ const createWindow = (): void => {
   mainWindow = new BrowserWindow({
     height: 800,
     width: 500,
-    resizable: false,
+    resizable: true, // remember: in production set false
     icon: path.join(__dirname, '../media/img/icon.ico'),
     webPreferences: {
       nodeIntegration: true
@@ -89,7 +89,7 @@ const createWindow = (): void => {
   mainWindow.loadFile(path.join(__dirname, "../index.html"));
 
   // Open the DevTools.
-  //mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 
   // Remove menu
   mainWindow.setMenuBarVisibility(false);
