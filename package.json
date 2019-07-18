@@ -4,9 +4,8 @@
   "description": "A minimal Todo List application written in Typescript",
   "main": "dist/app.js",
   "scripts": {
-    "ts": "tsc",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run ts && electron ./dist/app.js",
+    "start": "tsc && electron ./dist/app.js",
     "build-win32": "electron-packager .  \"TodoList\" --platform=win32 --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.ico --overwrite",
     "build-linux": "electron-packager .  \"TodoList\" --platform=linux --arch=x64 --executable-name=\"todolist\" --out=build --icon=media\\img\\icon.png --overwrite",
     "installer": "electron-installer-windows --config config.json"
@@ -21,7 +20,6 @@
     "@types/electron": "^1.6.10",
     "@types/jquery": "^3.3.30",
     "electron": "^5.0.7",
-    "electron-installer-windows": "^2.0.0",
     "electron-packager": "^14.0.1",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
