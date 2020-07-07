@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/electron": "^1.6.10",
     "@types/jquery": "^3.3.30",
-    "electron": "^5.0.7",
+    "electron": "^7.2.4",
     "electron-packager": "^14.0.1",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
